@@ -1,0 +1,43 @@
+body {
+  background: #f4f4f4;
+  font-family: Arial, sans-serif;
+  padding: 40px;
+}
+
+.todo-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.todo-item {
+  margin-bottom: 15px;
+}
+
+.todo-item label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.todo-item input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #007BFF;
+}
+
+/* ✅ CROSS OUT the text when checked */
+.todo-item input[type="checkbox"]:checked + span {
+  text-decoration: line-through;
+  color: gray;
+}
