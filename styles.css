@@ -36,7 +36,6 @@ h2 {
   accent-color: #007BFF;
 }
 
-/* ✅ CROSS OUT the text when checked */
 .todo-item input[type="checkbox"]:checked + span {
   text-decoration: line-through;
   color: gray;
